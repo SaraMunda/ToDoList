@@ -1,6 +1,7 @@
 let input = document.getElementById("input-el")
-let ulEl= document.getElementById("ul-el")
+let ulEl = document.getElementById("ul-el")
 let addBtn = document.getElementById("addBtn")
+let clearBtn = document.getElementById("clearBtn")
 
 
 addBtn.addEventListener("click",()=>{
@@ -27,4 +28,12 @@ addBtn.addEventListener("click",()=>{
 
         input.value=""
     }
+})
+
+function clearItems(){
+    ulEl.innerHTML= ""
+}
+
+clearBtn.addEventListener("click",()=>{
+    clearItems()
 })

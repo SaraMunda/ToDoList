@@ -26,26 +26,27 @@ h1{
     box-shadow: 5px 5px 5px #5F432C;
 }
 
-.btn { 
+#addBtn { 
     background-color: #C2A27F;
     font-family: 'Playpen Sans', cursive;
-    border : none;
+    border: none;
     color:#121212;
     font-weight: bold;
 }
 
-.btn:active{
+#addBtn:active{
     background-color: #C2A27F;
     border: none;
     transform: scale(0.90);
     transition: transform 0.1s;
 }
 
-.btn:focus{
+#addBtn:focus{
     box-shadow: 3px 3px #5F432C;
 }
 
-li{
+
+.list-group-items{
     color:#121212;
     font-family: 'Playpen Sans', cursive;
     background-color: #C2A27F;
@@ -53,9 +54,9 @@ li{
     font-weight: bold;
     padding:10px;
     margin-bottom: 5px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto auto; /* Tre colonne: la prima occupa tutto lo spazio disponibile, le altre due sono di dimensione automatica */
     align-items: center;
-    justify-content: space-between
 }
 
 .form-check-input{
@@ -72,4 +73,28 @@ li{
     transition: transform 0.1s;
     box-shadow: none;
     outline: none;
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+
+#clearBtn{
+    margin-left: 6px;
+    background-color: #C2A27F;
+    font-family: 'Playpen Sans', cursive;
+    border: none;
+    color:#121212;
+    font-weight: bold;
+}
+
+#clearBtn:active{
+    background-color: #C2A27F;
+    border: none;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+#clearBtn:focus{
+    box-shadow: 3px 3px #5F432C;
 }
