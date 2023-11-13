@@ -1,0 +1,75 @@
+body{
+    background-color: #FFF4E8;
+}
+
+h1{
+    color: #5F432C;
+    font-weight: bold;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.form-control {
+    background-color: #C2A27F;
+    border:none;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: bold;
+    color:black;
+}
+
+.form-control::placeholder{
+    color: #121212;
+    font-weight: lighter;
+}
+
+.form-control:focus{
+    background-color: #C2A27F;
+    box-shadow: 5px 5px 5px #5F432C;
+}
+
+.btn { 
+    background-color: #C2A27F;
+    font-family: 'Playpen Sans', cursive;
+    border : none;
+    color:#121212;
+    font-weight: bold;
+}
+
+.btn:active{
+    background-color: #C2A27F;
+    border: none;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+.btn:focus{
+    box-shadow: 3px 3px #5F432C;
+}
+
+li{
+    color:#121212;
+    font-family: 'Playpen Sans', cursive;
+    background-color: #C2A27F;
+    border-radius: 50px;
+    font-weight: bold;
+    padding:10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.form-check-input{
+    width:20px;
+    height: 20px;
+    background-color: #5F432C;
+}
+
+.form-check-input:checked,
+.form-check-input:focus{
+    background-color: #5F432C;
+    border: none;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+    box-shadow: none;
+    outline: none;
+}
