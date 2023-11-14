@@ -1,5 +1,5 @@
 body{
-    background-color: #FFF4E8;
+    background-color:#FFF4E8;
 }
 
 h1{
@@ -26,7 +26,11 @@ h1{
     box-shadow: 5px 5px 5px #5F432C;
 }
 
-#addBtn { 
+#addBtn,
+#clearBtn,
+#clearNotesBtn,
+#clearChecked { 
+    margin-left: 6px;
     background-color: #C2A27F;
     font-family: 'Playpen Sans', cursive;
     border: none;
@@ -34,14 +38,20 @@ h1{
     font-weight: bold;
 }
 
-#addBtn:active{
+#addBtn:active,
+#clearBtn:active,
+#clearNotesBtn:active, 
+#clearChecked:active {
     background-color: #C2A27F;
     border: none;
     transform: scale(0.90);
     transition: transform 0.1s;
 }
 
-#addBtn:focus{
+#addBtn:focus,
+#clearBtn:focus,
+#clearNotesBtn:focus,
+#clearChecked:focus {
     box-shadow: 3px 3px #5F432C;
 }
 
@@ -55,7 +65,7 @@ h1{
     padding:10px;
     margin-bottom: 5px;
     display: grid;
-    grid-template-columns: 1fr auto auto; /* Tre colonne: la prima occupa tutto lo spazio disponibile, le altre due sono di dimensione automatica */
+    grid-template-columns: 1fr auto auto; 
     align-items: center;
 }
 
@@ -79,22 +89,12 @@ h1{
     box-shadow: none;
 }
 
-#clearBtn{
-    margin-left: 6px;
-    background-color: #C2A27F;
-    font-family: 'Playpen Sans', cursive;
-    border: none;
-    color:#121212;
-    font-weight: bold;
+#overflowMenu::after {
+    content: none;
 }
 
-#clearBtn:active{
-    background-color: #C2A27F;
-    border: none;
-    transform: scale(0.90);
-    transition: transform 0.1s;
-}
-
-#clearBtn:focus{
-    box-shadow: 3px 3px #5F432C;
+.dropdown-menu{
+    background-color:#F6E3CE;
+    border:1px solid #5F432C;
+    border-radius: 10px;
 }
