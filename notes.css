@@ -1,0 +1,73 @@
+body{
+    background-color:#FFF4E8;
+}
+h1{
+    color: #5F432C;
+    font-weight: bold;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#input-el{
+    background-color: #C2A27F;
+    border:none;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: bold;
+    color:black;
+}
+
+#input-el::placeholder{
+    color: #121212;
+    font-weight: lighter;
+}
+
+#input-el:focus{
+    background-color: #C2A27F;
+    box-shadow: 5px 5px 5px #5F432C;
+}
+
+#addNotes{
+    margin-left: 6px;
+    background-color: #C2A27F;
+    font-family: 'Playpen Sans', cursive;
+    border: none;
+    color:#121212;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#addNotes:active{
+    background-color: #C2A27F;
+    border: none;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+#addNotes:focus{
+    box-shadow: 3px 3px #5F432C;
+}
+
+.col{
+    background-color:#C2A27F;
+    border:none;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: bold;
+    color:black;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: 100px;
+}
+
+.col::placeholder{
+    color: #121212;
+    font-weight: lighter;
+}
+
+.col:focus{
+    background-color: #C2A27F;
+    box-shadow: 5px 5px 5px #5F432C;
+}
+
+#textarea-container{
+    background-color: #FFF4E8;
+}
