@@ -55,7 +55,6 @@ h1{
     box-shadow: 3px 3px #5F432C;
 }
 
-
 .list-group-items{
     color:#121212;
     font-family: 'Playpen Sans', cursive;
@@ -97,4 +96,27 @@ h1{
     background-color:#F6E3CE;
     border:1px solid #5F432C;
     border-radius: 10px;
+}
+
+#containerBottom{
+    background-color: #C2A27F;
+    height:70px;
+    border-radius: 20px;
+}
+
+#containerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#checkCircleIcon{
+    font-size: 35px;
+    color:#121212;
+}
+
+
+#card{
+    font-size: 35px;
+    color:#121212;
 }
