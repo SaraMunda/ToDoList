@@ -5,6 +5,8 @@ let clearBtn = document.getElementById("clearBtn")
 let notes = document.getElementById("notes")
 let notesBtn = document.getElementById("clearNotesBtn")
 let clearCheckedBtn = document.getElementById("clearChecked")
+let checkCircleIcon = document.getElementById ("checkCircleIcon")
+let card = document.getElementById("card")
 
 
 addBtn.addEventListener("click",()=>{
