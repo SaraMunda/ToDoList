@@ -1,6 +1,7 @@
 body{
     background-color:#FFF4E8;
 }
+
 h1{
     color: #5F432C;
     font-weight: bold;
@@ -13,6 +14,7 @@ h1{
     font-family: 'Playpen Sans', cursive;
     font-weight: bold;
     color:black;
+    margin-bottom: 20px;
 }
 
 #input-el::placeholder{
@@ -25,7 +27,8 @@ h1{
     box-shadow: 5px 5px 5px #5F432C;
 }
 
-#addNotes{
+#addNotes,
+#clearAllNotes{
     margin-left: 6px;
     background-color: #C2A27F;
     font-family: 'Playpen Sans', cursive;
@@ -33,41 +36,76 @@ h1{
     color:#121212;
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
-#addNotes:active{
+#addNotes:active,
+#clearAllNotes{
     background-color: #C2A27F;
     border: none;
     transform: scale(0.90);
     transition: transform 0.1s;
 }
 
-#addNotes:focus{
+#addNotes:focus,
+#clearAllNotes:focus{
     box-shadow: 3px 3px #5F432C;
 }
 
-.col{
+.col-3{
     background-color:#C2A27F;
     border:none;
     font-family: 'Playpen Sans', cursive;
     font-weight: bold;
     color:black;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    height: 100px;
+    height:100px;
 }
 
-.col::placeholder{
+.col-3::placeholder{
     color: #121212;
     font-weight: lighter;
 }
 
-.col:focus{
+.col-3:focus{
     background-color: #C2A27F;
     box-shadow: 5px 5px 5px #5F432C;
 }
 
-#textarea-container{
-    background-color: #FFF4E8;
+ul{
+    display:flex;
+    justify-content: center;
+}
+
+li{
+    margin-right:25px;
+    margin-left:25px;
+    margin-bottom: 20px;
+}
+
+.btn-close {
+    margin-top:5px;
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+
+#containerBottom{
+    background-color: #C2A27F;
+    height:70px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#checkCircleIcon{
+    font-size: 35px;
+    color:#121212;
+    cursor: pointer;
+}
+
+#cardIcon{
+    font-size: 35px;
+    color:#121212;
 }

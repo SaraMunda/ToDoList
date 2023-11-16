@@ -2,11 +2,8 @@ let input = document.getElementById("input-el")
 let ulEl = document.getElementById("ul-el")
 let addBtn = document.getElementById("addBtn")
 let clearBtn = document.getElementById("clearBtn")
-let notes = document.getElementById("notes")
-let notesBtn = document.getElementById("clearNotesBtn")
 let clearCheckedBtn = document.getElementById("clearChecked")
-let checkCircleIcon = document.getElementById ("checkCircleIcon")
-let card = document.getElementById("card")
+let cardIcon = document.getElementById("cardIcon")
 
 
 addBtn.addEventListener("click",()=>{
@@ -52,24 +49,7 @@ clearBtn.addEventListener("click",()=>{
             clearAllItems()
         }
     } else {
-        const confirmation = window.confirm("There are no items to delete")
-    }
-})
-
-//Clear all the notes
-
-function clearNotes(){
-    notes.value=""
-}
-
-notesBtn.addEventListener("click",()=>{
-    if(notes.value.length > 0) {
-        const confirmation = window.confirm("Are you sure you want to delete the notes?")
-        if(confirmation){
-            clearNotes()
-        }
-    } else{
-        const confirmation = window.confirm("There are no notes to delete")
+        window.alert("There are no items to delete")
     }
 })
 
@@ -87,4 +67,10 @@ clearCheckedBtn.addEventListener("click", () => {
             }
         }
     }
+})
+
+//Link to todolist page
+
+cardIcon.addEventListener("click",()=>{
+    window.location.href = "notes.html"
 })

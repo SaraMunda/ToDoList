@@ -102,9 +102,6 @@ h1{
     background-color: #C2A27F;
     height:70px;
     border-radius: 20px;
-}
-
-#containerBottom{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -115,8 +112,8 @@ h1{
     color:#121212;
 }
 
-
-#card{
+#cardIcon{
     font-size: 35px;
     color:#121212;
+    cursor: pointer;
 }
