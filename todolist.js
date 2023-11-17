@@ -1,7 +1,7 @@
 let input = document.getElementById("input-el")
 let ulEl = document.getElementById("ul-el")
 let addBtn = document.getElementById("addBtn")
-let clearBtn = document.getElementById("clearBtn")
+let clearAllBtn = document.getElementById("clearAllBtn")
 let clearCheckedBtn = document.getElementById("clearChecked")
 let cardIcon = document.getElementById("cardIcon")
 
@@ -40,7 +40,7 @@ function clearAllItems(){
     ulEl.innerHTML=""
 }
 
-clearBtn.addEventListener("click",()=>{
+clearAllBtn.addEventListener("click",()=>{
     const listItems = ulEl.getElementsByTagName("li")
 
     if (listItems.length > 0) {

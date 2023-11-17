@@ -77,9 +77,7 @@ ul{
 }
 
 li{
-    margin-right:25px;
-    margin-left:25px;
-    margin-bottom: 20px;
+    margin-right:50px;
 }
 
 .btn-close {
@@ -88,6 +86,10 @@ li{
 
 .btn-close:focus{
     box-shadow: none;
+}
+
+#textarea-container {
+    margin-bottom: 100px;
 }
 
 #containerBottom{
@@ -108,4 +110,12 @@ li{
 #cardIcon{
     font-size: 35px;
     color:#121212;
+}
+
+#checkCircleIcon:active{
+    opacity: 0.1;
+}
+
+#checkCircleIcon:hover{
+    color:#5F432C;
 }

@@ -8,26 +8,27 @@ h1{
     font-family: 'Playpen Sans', cursive;
 }
 
-.form-control {
+#input-el {
     background-color: #C2A27F;
     border:none;
     font-family: 'Playpen Sans', cursive;
     font-weight: bold;
     color:black;
+    margin-bottom: 10px;
 }
 
-.form-control::placeholder{
+#input-el::placeholder{
     color: #121212;
     font-weight: lighter;
 }
 
-.form-control:focus{
+#input-el:focus{
     background-color: #C2A27F;
     box-shadow: 5px 5px 5px #5F432C;
 }
 
 #addBtn,
-#clearBtn,
+#clearAllBtn,
 #clearNotesBtn,
 #clearChecked { 
     margin-left: 6px;
@@ -36,10 +37,11 @@ h1{
     border: none;
     color:#121212;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 #addBtn:active,
-#clearBtn:active,
+#clearAllBtn:active,
 #clearNotesBtn:active, 
 #clearChecked:active {
     background-color: #C2A27F;
@@ -49,22 +51,26 @@ h1{
 }
 
 #addBtn:focus,
-#clearBtn:focus,
+#clearAllBtn:focus,
 #clearNotesBtn:focus,
 #clearChecked:focus {
     box-shadow: 3px 3px #5F432C;
 }
 
-.list-group-items{
+.container-list{
+    margin-bottom: 80px;
+}
+
+li{
     color:#121212;
     font-family: 'Playpen Sans', cursive;
     background-color: #C2A27F;
     border-radius: 50px;
     font-weight: bold;
     padding:10px;
-    margin-bottom: 5px;
-    display: grid;
-    grid-template-columns: 1fr auto auto; 
+    margin-bottom: 15px;
+    display:grid;
+    grid-template-columns: 1fr auto auto;
     align-items: center;
 }
 
@@ -116,4 +122,12 @@ h1{
     font-size: 35px;
     color:#121212;
     cursor: pointer;
+}
+
+#cardIcon:active{
+    opacity: 0.1;
+}
+
+#cardIcon:hover{
+    color: #5F432C;
 }
