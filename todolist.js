@@ -1,15 +1,22 @@
-let input = document.getElementById("input-el")
-let ulEl = document.getElementById("ul-el")
-let addBtn = document.getElementById("addBtn")
-let clearAllBtn = document.getElementById("clearAllBtn")
-let clearCheckedBtn = document.getElementById("clearChecked")
-let cardIcon = document.getElementById("cardIcon")
-
+const input = document.getElementById("input-el")
+const ulEl = document.getElementById("ul-el")
+const addBtn = document.getElementById("addBtn")
+const clearAllBtn = document.getElementById("clearAllBtn")
+const clearCheckedBtn = document.getElementById("clearChecked")
+const cardIcon = document.getElementById("cardIcon")
 
 addBtn.addEventListener("click",()=>{
-    let list= input.value
+    let list = input.value
 
-    if(list){
+    clearInputField()
+    createTodolist(list)
+    saveListToLocalStorage()
+})
+
+//Create list
+
+function createTodolist(list){
+    if(list.trim() !==""){
         const li = document.createElement("li")
         li.className = "list-group-items"
         li.textContent = list
@@ -26,18 +33,27 @@ addBtn.addEventListener("click",()=>{
         //Remove the single items
         button.addEventListener("click", function(){
             li.remove()
+            saveListToLocalStorage()
         })
         
         li.appendChild(button)
 
-        input.value=""
+        return li
     }
-})
+}
+    
+        
+//Clear input field
+
+function clearInputField() {
+    input.value = ""
+}
 
 //Clear all the items
 
 function clearAllItems(){
     ulEl.innerHTML=""
+    saveListToLocalStorage()
 }
 
 clearAllBtn.addEventListener("click",()=>{
@@ -67,6 +83,7 @@ clearCheckedBtn.addEventListener("click", () => {
             }
         }
     }
+    saveListToLocalStorage()
 })
 
 //Link to todolist page
@@ -74,3 +91,22 @@ clearCheckedBtn.addEventListener("click", () => {
 cardIcon.addEventListener("click",()=>{
     window.location.href = "notes.html"
 })
+
+//localStorage
+
+function saveListToLocalStorage() {
+    const todolist = Array.from(ulEl.getElementsByTagName("li")).map(li => li.textContent)
+    localStorage.setItem("toDoList", JSON.stringify(todolist))
+}
+
+function getListFromLocalStorage() {
+    const savedlist = localStorage.getItem("toDoList")
+    if (savedlist) {
+        var todolist = JSON.parse(savedlist)
+        todolist.forEach(item => createTodolist(item))
+    }
+}
+
+window.onload = function() {
+    getListFromLocalStorage()
+}
