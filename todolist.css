@@ -14,7 +14,8 @@ h1{
     font-family: 'Playpen Sans', cursive;
     font-weight: bold;
     color:black;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #input-el::placeholder{
@@ -29,20 +30,16 @@ h1{
 
 #addBtn,
 #clearAllBtn,
-#clearNotesBtn,
 #clearChecked { 
-    margin-left: 6px;
     background-color: #C2A27F;
     font-family: 'Playpen Sans', cursive;
     border: none;
     color:#121212;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 #addBtn:active,
-#clearAllBtn:active,
-#clearNotesBtn:active, 
+#clearAllBtn:active, 
 #clearChecked:active {
     background-color: #C2A27F;
     border: none;
@@ -52,13 +49,24 @@ h1{
 
 #addBtn:focus,
 #clearAllBtn:focus,
-#clearNotesBtn:focus,
 #clearChecked:focus {
     box-shadow: 3px 3px #5F432C;
 }
 
+#overflowMenu::after {
+    content: none;
+}
+
+.dropdown-menu{
+    background-color:#F6E3CE;
+    border:1px solid #5F432C;
+    border-radius: 10px;
+    padding:10px;
+}
+
 .container-list{
     margin-bottom: 80px;
+    margin-top: 20px;
 }
 
 li{
@@ -94,20 +102,11 @@ li{
     box-shadow: none;
 }
 
-#overflowMenu::after {
-    content: none;
-}
-
-.dropdown-menu{
-    background-color:#F6E3CE;
-    border:1px solid #5F432C;
-    border-radius: 10px;
-}
-
 #containerBottom{
     background-color: #C2A27F;
-    height:70px;
     border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom:10px;
     display: flex;
     align-items: center;
     justify-content: space-around;

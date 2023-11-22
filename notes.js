@@ -25,7 +25,7 @@ function addNotesToContainer(){
     textarea.className = "form-control mt-3 col-3"
     textarea.placeholder = "Enter your notes..."
 
-    const listItem = document.createElement("li")
+    const listItem = document.createElement("li") 
 
     //Remove single note
 

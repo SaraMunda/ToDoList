@@ -58,8 +58,8 @@ ul{
 }
 
 li{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .btn-close {
@@ -71,12 +71,13 @@ li{
 }
 
 #textarea-container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 #containerBottom{
     background-color: #C2A27F;
-    height:70px;
+    padding-top: 10px;
+    padding-bottom:10px;
     border-radius: 20px;
     display: flex;
     align-items: center;
