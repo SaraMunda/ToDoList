@@ -17,7 +17,7 @@ function addNotesToContainer(){
 
     if (!currentRow || currentRow.children.length >= maxTextareaPerRow) {
       currentRow = document.createElement("ul")
-      currentRow.className = "list-unstyled d-flex flex-nowrap"
+      currentRow.className = "list-unstyled d-flex flex-wrap"
       textareaContainer.appendChild(currentRow)
     }
 
@@ -41,7 +41,6 @@ function addNotesToContainer(){
     listItem.appendChild(button)
     currentRow.appendChild(listItem)
   }
-
 
 //Remove all the notes
 
